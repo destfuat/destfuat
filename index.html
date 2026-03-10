@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero p {
+      color: #666;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card hero">
+      <h1>Merhaba, Ben Admin</h1>
+      <p>.NET Core, React, React Native ve DevOps ile ilgileniyorum.</p>
+      <a href="#projects" class="btn">Projelerim</a>
+    </div>
+
+    <div class="card" style="margin-top: 20px;">
+      <h2>Hakkımda</h2>
+      <p>
+        Yazılım geliştirmeyi, araştırmayı ve yeni teknolojiler öğrenmeyi seviyorum.
+        Modern web ve mobil projeler geliştiriyorum.
+      </p>
+    </div>
+
+    <div class="card" id="projects" style="margin-top: 20px;">
+      <h2>Projeler</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Proje 1</h3>
+          <p>React ile geliştirilmiş modern bir web uygulaması.</p>
+        </div>
+        <div class="project">
+          <h3>Proje 2</h3>
+          <p>.NET Core API tabanlı backend sistemi.</p>
+        </div>
+        <div class="project">
+          <h3>Proje 3</h3>
+          <p>React Native ile mobil uygulama denemesi.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 20px;">
+      <h2>İletişim</h2>
+      <p>Email: mail@example.com</p>
+      <p>GitHub: github.com/kullaniciadi</p>
+    </div>
+
+    <footer>
+      © 2026 Admin - Tüm hakları saklıdır.
+    </footer>
+  </div>
+</body>
+</html>
